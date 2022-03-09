@@ -1,10 +1,11 @@
 NAME=Array
 FLAGS=-Wall -Wextra -Werror
 SRCS= main.cpp
+HEADERS = Array.hpp
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
+$(NAME): $(SRCS) $(HEADERS)
 	c++ $(FLAGS) $(SRCS) -o $(NAME)
 
 clean:
