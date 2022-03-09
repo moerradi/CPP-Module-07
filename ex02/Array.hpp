@@ -8,7 +8,7 @@ class Array
 		Array()
 		{
 			this->_size = 0;
-			this->_array = new T();
+			this->_array = NULL;
 		}
 
 		Array(unsigned int size)
